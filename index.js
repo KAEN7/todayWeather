@@ -4,6 +4,8 @@ const cloud = document.querySelector(".cloud");
 const rainnig = document.querySelector(".raining");
 const thunder = document.querySelector(".thunder");
 
+let weather = "sun";
+
 function onClickWeather(weather) {
   weatherBtn.style.display = "none";
   switch (weather) {

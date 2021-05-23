@@ -23,22 +23,22 @@ body {
   color: white;
 }
 
-#weatherList {
+#weatherList .sun {
   display: none;
-}
-
-#weatherList > .sun {
-  display: none;
+  color: white;
 }
 
 #weatherList > .cloud {
+  color: white;
   display: none;
 }
 
 #weatherList > .raining {
+  color: white;
   display: none;
 }
 
 #weatherList > .thunder {
   display: none;
+  color: white;
 }
