@@ -1,0 +1,44 @@
+body {
+  background: black;
+  font-size: 4rem;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 400px;
+}
+
+.weatherBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  background: #da8e02;
+  border: #da8e02;
+  border-radius: 100%;
+  width: 500px;
+  height: 500px;
+  font-size: 4rem;
+  color: white;
+}
+
+#weatherList {
+  display: none;
+}
+
+#weatherList > .sun {
+  display: none;
+}
+
+#weatherList > .cloud {
+  display: none;
+}
+
+#weatherList > .raining {
+  display: none;
+}
+
+#weatherList > .thunder {
+  display: none;
+}
