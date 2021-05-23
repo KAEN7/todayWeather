@@ -1,25 +1,33 @@
 const weatherBtn = document.querySelector(".weatherBtn");
-const sun = document.querySelector(".sun");
-const cloud = document.querySelector(".cloud");
-const rainnig = document.querySelector(".raining");
+const listBox = document.querySelector(".listBox");
+const cloudy = document.querySelector(".cloudy");
+const raning = document.querySelector(".raning");
+const snowly = document.querySelector(".snowly");
 const thunder = document.querySelector(".thunder");
+const sunny = document.querySelector(".sunny");
 
-let weather = "sun";
+// 서버에서 받아올 날씨
+let x = "cloudy";
 
-function onClickWeather(weather) {
+function onClickWeather(x) {
+  console.log("cloudy");
   weatherBtn.style.display = "none";
-  switch (weather) {
-    case "sun":
-      sun.style.display = "flex";
+  listBox.style.display = "flex";
+  switch (x) {
+    case "sunny":
+      sunny.style.display = "flex";
       break;
     case "cloud":
       cloud.style.display = "flex";
       break;
-    case "rainnig":
-      rainnig.style.display = "flex";
+    case "snowly":
+      snowly.style.display = "flex";
       break;
     case "thunder":
       thunder.style.display = "flex";
+      break;
+    case "raning":
+      raning.style.display = "flex";
       break;
   }
 }
