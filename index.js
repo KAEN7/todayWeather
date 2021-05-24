@@ -7,18 +7,22 @@ const thunder = document.querySelector(".thunder");
 const sunny = document.querySelector(".sunny");
 
 // 서버에서 받아올 날씨
-let x = "cloudy";
+function catchServer() {
+  let weater = "cloudy";
+  onClickWeather(weater);
+}
 
 function onClickWeather(x) {
-  console.log("cloudy");
   weatherBtn.style.display = "none";
   listBox.style.display = "flex";
+  console.log("함수는 동작됨", typeof x, x);
   switch (x) {
     case "sunny":
       sunny.style.display = "flex";
       break;
-    case "cloud":
-      cloud.style.display = "flex";
+    case "cloudy":
+      console.log(x);
+      cloudy.style.display = "flex";
       break;
     case "snowly":
       snowly.style.display = "flex";
@@ -33,5 +37,5 @@ function onClickWeather(x) {
 }
 
 if (weatherBtn) {
-  weatherBtn.addEventListener("click", onClickWeather);
+  weatherBtn.addEventListener("click", catchServer);
 }
