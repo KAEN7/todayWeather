@@ -12,6 +12,7 @@ function catchServer() {
   onClickWeather(weater);
 }
 
+// 해당 날씨 찾아주는 함수
 function onClickWeather(x) {
   weatherBtn.style.display = "none";
   listBox.style.display = "flex";
