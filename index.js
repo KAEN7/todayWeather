@@ -22,7 +22,6 @@ function onClickWeather(x) {
       sunny.style.display = "flex";
       break;
     case "cloudy":
-      console.log(x);
       cloudy.style.display = "flex";
       break;
     case "snowly":

@@ -22,10 +22,26 @@ body {
   height: 500px;
   font-size: 4rem;
   color: white;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 12%;
+    width: 65%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 27%;
+  }
 }
 
 .weatherBtn:hover {
-  color: lightgray;
+  color: rgb(232, 228, 228);
+  font-size: 4.2rem;
+  text-shadow: 2px 2px 2px rgb(48, 48, 48);
 }
 
 /* 날씨 아이콘 */
@@ -44,33 +60,27 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  /* display: none; */
 }
 
 .raning {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  /* display: none; */
 }
 
 .snowly {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  /* display: none; */
 }
 
 .thunder {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  /* display: none; */
 }
 
 .sunny {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  /* display: none; */
-}
